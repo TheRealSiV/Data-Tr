@@ -14,10 +14,15 @@ function run() {
         let name = document.getElementById("name").value;
         let city = document.getElementById("city").value;
 
-        this.usersService = putUsers(name, city);
-        this.usersService.get().then(response => (this.users = response.data));
+        this.usersService.put(name, city).then(response => (this.users = response.data));;
+      },
 
+      deleteUser: function (){
+        let name = document.getElementById("name").value;
+
+        //delet this /\
       }
+
     }
   });
 }
