@@ -1,0 +1,71 @@
+body {
+    padding: 20px;
+    text-align: center;
+    background-color: darkseagreen;
+}
+
+#widget {
+    width: 60px;
+    background-color: #555;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#title {
+    color: #555555;
+    font-family: "Century Gothic", serif;
+    font-size: 40px;
+    text-shadow: 1px 1px 3px #53aa53;
+    padding-bottom: 30vh;
+}
+
+#counter {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    background-color: #fff;
+    font-size: 30px;
+    font-family: "Century Gothic", serif;
+    border: thick solid lightgreen;
+    text-shadow: 1px 1px 2px #80aa80;
+    color: #555555;
+    text-align: center;
+    line-height: 50px;
+}
+
+#increment {
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    background-color: green;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    border: 1px;
+}
+
+#decrement {
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    background-color: indianred;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    border: 1px;
+}
+
+#increment:hover {
+    cursor: pointer;
+    background-color: darkgreen;
+    color: #ffffff;
+}
+
+
+#decrement:hover {
+    cursor: pointer;
+    background-color: red;
+    color: #ffffff;
+}
