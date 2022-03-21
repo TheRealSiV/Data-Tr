@@ -34,9 +34,16 @@
         </li>
       </ul>
 
-      <input class="user-row-header" id="name" type="text"  placeholder="Enter new name">
-      <input class="user-row-header" id="city" type="text" placeholder="City">
-      <button class="title" v-on:click="addUser">Add new</button>
+      <div style="position: center; padding-top: 10px; padding-left: 1.5em">
+        <div>
+          <input class="user-row-header" id="name" type="text"  placeholder="Enter new name">
+          <input class="user-row-header" id="city" type="text" placeholder="City">
+        </div>
+        <div style="padding-top: 10px">
+          <button class="title" style="width: 180px" v-on:click="addUser">Add new</button>
+          <button class="title" style="width: 180px" v-on:click="deleteUser">Delete</button>
+        </div>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>

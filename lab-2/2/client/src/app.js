@@ -13,16 +13,24 @@ function run() {
       addUser: function (){
         let name = document.getElementById("name").value;
         let city = document.getElementById("city").value;
-
-        this.usersService.put(name, city).then(response => (this.users = response.data));;
+        if(name.length > 2 && city.length > 2) {
+          this.usersService.put(name, city)
+              .then(response => {this.users = response.data;});
+        }
       },
 
       deleteUser: function (){
         let name = document.getElementById("name").value;
-
-        //delet this /\
+        if(1){
+          this.usersService.get().then(response => {this.users = response.data;});
+          for (let i = 0; i < this.users.length; i++ ) {
+            if(this.users[i].name === name){
+              this.usersService.delete(i).then(response => {this.users = response.data});
+              break;
+            }
+          }
+        }
       }
-
     }
   });
 }

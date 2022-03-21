@@ -7,11 +7,15 @@ api.get('/', function (request, response) {
 
 api.get('/users', function (request, response) {
   response.json(users);
+  console.log("GET finished");
 });
 
 api.put('/users', function (request, response) {
   users[users.length] = request.body;
   response.json('User was saved succesfully');
+  console.log("PUT finished");
+
+  //TODO update local list
 });
 
 api.delete('/users/:index', function (request, response) {
